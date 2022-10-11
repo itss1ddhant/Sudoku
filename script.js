@@ -1,8 +1,8 @@
 var arr = [[], [], [], [], [], [], [], [], []]
 var temp = [[], [], [], [], [], [], [], [], []]
 
-for (var i = 0; i < 9; i++) {
-    for (var j = 0; j < 9; j++) {
+for (var i = 0; i < 9; i=i+1) {
+    for (var j = 0; j < 9; j=j+1) {
         arr[i][j] = document.getElementById(i * 9 + j);
 
     }
@@ -10,8 +10,8 @@ for (var i = 0; i < 9; i++) {
 
 function initializeTemp(temp) {
 
-    for (var i = 0; i < 9; i++) {
-        for (var j = 0; j < 9; j++) {
+    for (var i = 0; i < 9; i=i+1) {
+        for (var j = 0; j < 9; j=j+1) {
             temp[i][j] = false;
 
         }
